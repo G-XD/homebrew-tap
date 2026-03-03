@@ -1,21 +1,21 @@
 class Aink < Formula
     desc "CLI to track and analyze AI coding tool usage"
     homepage "https://github.com/g-xd/aink"
-    version "0.0.1"
+    version "0.0.2"
   
     on_macos do
       if Hardware::CPU.arm?
         url "https://github.com/g-xd/aink/releases/download/v#{version}/aink-macos-aarch64.tar.gz"
-        sha256 "13a1099b92943f3521b3ed54d3a7fec854406f5c57d6ce580548ea9aaca91150"
+        sha256 "8b3c16e0d319cf4a45a650b2b3c812303b143426ff1a03fa16a91a73effe97a8"
       else
         url "https://github.com/g-xd/aink/releases/download/v#{version}/aink-macos-x86_64.tar.gz"
-        sha256 "35511f1e211c9eb66463ec478d3359f8598fd507b8ddd6e64f646d324a21f8d0"
+        sha256 "05260a55735291835438840c0811026cabf136192ecc26ec1ec3378f0d7258c6"
       end
     end
   
     on_linux do
         url "https://github.com/g-xd/aink/releases/download/v#{version}/aink-linux-x86_64.tar.gz"
-        sha256 "cc54ba953c19c9b06e500849d38aa7f6ecde88a884b82483d714aea769f1c2bd"
+        sha256 "80a0401afcb1fb2628ed20914fffb5efcbccb8dedc85306288276f3ba8f524e6"
     end
   
     def install
